@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng1.0.dtd">
+<suite name="Suite1">
+	<test name="testTestNG">
+		<classes>
+			<class name="com.guoyasoft.testng.Methods">
+			</class>
+		</classes>
+	</test>
+	<test name="testBaidu">
+		<classes>
+			<class name="com.guoyasoft.testng.BeforeAndAfter" />
+			<class name="com.guoyasoft.testng.TestBaidu" />
+		</classes>
+	</test>
+	
+	<test name="testJD">
+		<parameter name="driverPath" value="c:\\xxxxx" />
+		<parameter name="url" value="http://www.jd.com" />
+		
+		<classes>
+			<class name="com.guoyasoft.testng.BeforeAndAfter" />
+			<class name="com.guoyasoft.testng.TestJD">
+			</class>
+		</classes>
+	</test>
+</suite>
